@@ -1,0 +1,1553 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="https://blog.csdn.net/weixin_39840606/article/details/111179862"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="report" content='{"pid": "blog", "spm":"1001.2101"}'>
+    <meta name="referrer" content="always">
+    <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
+    <meta name="shenma-site-verification" content="5a59773ab8077d4a62bf469ab966a63b_1497598848">
+    <meta name="applicable-device" content="pc">
+    <link  href="https://g.csdnimg.cn/static/logo/favicon32.ico"  rel="shortcut icon" type="image/x-icon" />
+    <title>python open w wb_Python = 62/365_weixin_39840606的博客-CSDN博客</title>
+    <script>
+      (function(){ 
+        var el = document.createElement("script"); 
+        el.src = "https://s3a.pstatp.com/toutiao/push.js?1abfa13dfe74d72d41d83c86d240de427e7cac50c51ead53b2e79d40c7952a23ed7716d05b4a0f683a653eab3e214672511de2457e74e99286eb2c33f4428830"; 
+        el.id = "ttzz"; 
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(el, s);
+      })(window)
+    </script>
+        <meta name="keywords" content="python open w wb_Python = 62/365">
+        <meta name="csdn-baidu-search"  content='{"autorun":true,"install":true,"keyword":"python open w wb_Python = 62/365"}'>
+    <meta name="description" content="●Python=62/365●Python的主要功能还是控制程序的执行流程，Python的代码主要是控制代码。Python的文件操作，让数据文件和结果能够进行相互的操作，绝对是常用中的常用！文件的主要操作包括文件的打开，关闭，读写。日更不停，你看行不行？我带着你，你带着PythonFlag，共勉！No.1Python-文件打开到现在为止，已经学习了读取和写入标准输入和输出。现在，...">
+    <script src="//g.csdnimg.cn/tingyun/1.8.5/blog.js" type='text/javascript'></script>
+        <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/release/blogv2/dist/pc/css/detail_enter-d9aa713720.min.css">
+    <style>
+        #content_views pre{
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none; 
+            user-select: none; 
+        }
+        #content_views pre code{
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none; 
+            user-select: none; 
+        }
+    </style>
+    <script type="application/ld+json">{"@context":"https://ziyuan.baidu.com/contexts/cambrian.jsonld","@id":"https://blog.csdn.net/weixin_39840606/article/details/111179862","appid":"1638831770136827","pubDate":"2020-11-27T09:06:52","title":"python open w wb_Python = 62/365_weixin_39840606的博客-CSDN博客","upDate":"2020-11-27T09:06:52"}</script>
+        <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/release/blogv2/dist/pc/themesSkin/skin-1024/skin-1024-ecd36efea2.min.css">
+    <script src="https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var isCorporate = false;//注释删除enterprise
+        var username =  "weixin_39840606";
+        var skinImg = "white";
+        var blog_address = "https://blog.csdn.net/weixin_39840606";
+        var currentUserName = "";
+        var isOwner = false;
+        var loginUrl = "http://passport.csdn.net/account/login?from=https://blog.csdn.net/weixin_39840606/article/details/111179862";
+        var blogUrl = "https://blog.csdn.net/";
+        var avatar = "https://profile.csdnimg.cn/C/9/5/3_weixin_39840606";
+        var articleTitle = "python open w wb_Python = 62/365";
+        var articleDesc = "●Python=62/365●Python的主要功能还是控制程序的执行流程，Python的代码主要是控制代码。Python的文件操作，让数据文件和结果能够进行相互的操作，绝对是常用中的常用！文件的主要操作包括文件的打开，关闭，读写。日更不停，你看行不行？我带着你，你带着PythonFlag，共勉！No.1Python-文件打开到现在为止，已经学习了读取和写入标准输入和输出。现在，...";
+        var articleTitles = "python open w wb_Python = 62/365_weixin_39840606的博客-CSDN博客";
+        var nickName = "weixin_39840606";
+        var articleDetailUrl = "https://blog.csdn.net/weixin_39840606/article/details/111179862";
+        if(window.location.host.split('.').length == 3) {
+            blog_address = blogUrl + username;
+        }
+        var skinStatus = "White";
+        var blogStaticHost = "https://csdnimg.cn/release/blogv2/"
+        var isShowConcision = false;
+        var isCookieConcision = false
+        var isHasDirectoryModel = false
+        var isShowSideModel = false
+        var isShowDirectoryModel = true
+        function getCookieConcision(sName){
+            var allCookie = document.cookie.split("; ");
+            for (var i=0; i < allCookie.length; i++){
+                var aCrumb = allCookie[i].split("=");
+                if (sName == aCrumb[0])
+                    return aCrumb[1];
+            }
+            return null;
+        }
+        if (getCookieConcision('blog_details_concision') && getCookieConcision('blog_details_concision') == 0){
+            isCookieConcision = true
+            isShowSideModel = true
+            isShowDirectoryModel = false
+        }
+    </script>
+    <script src="https://g.csdnimg.cn/??fixed-sidebar/1.1.6/fixed-sidebar.js" type="text/javascript"></script>
+    <script src='//g.csdnimg.cn/common/csdn-report/report.js' type='text/javascript'></script>
+    <link rel="stylesheet" type="text/css" href="https://csdnimg.cn/public/sandalstrap/1.4/css/sandalstrap.min.css">
+    <style>
+        .MathJax, .MathJax_Message, .MathJax_Preview{
+            display: none
+        }
+    </style>
+    <script src="https://dup.baidustatic.com/js/ds.js"></script>
+</head>
+  <body class="nodata " style="">
+        <script>
+            var toolbarSearchExt = '{"landingWord":[],"queryWord":"","tag":["python open w wb"],"title":"python open w wb_Python = 62/365"}';
+        </script>
+    <script src="https://g.csdnimg.cn/common/csdn-toolbar/csdn-toolbar.js" type="text/javascript"></script>
+    <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+<link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/pc/css/blog_code-01256533b5.min.css">
+<link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/chart-3456820cac.css" />
+
+<script>
+    var articleId = 111179862;
+    var commentscount = 0;
+    var curentUrl = "https://blog.csdn.net/weixin_39840606/article/details/111179862";
+    var myUrl = "https://my.csdn.net/";
+    var highlight = ["python","open","365","wb","62","="];//高亮数组
+    var isRecommendModule = true;
+    var isBaiduPre = true;
+    var baiduCount = 2;
+    var setBaiduJsCount = 10;
+    var share_card_url = "https://app-blog.csdn.net/share?article_id=111179862&username=weixin_39840606"
+	var articleType = 0;
+    var baiduKey = "python open w wb_Python = 62/365";
+    var userNewReport = true;
+    var needInsertBaidu = true;
+    var recommendRegularDomainArr = ["blog.csdn.net/.+/article/details/","download.csdn.net/download/","edu.csdn.net/course/detail/","ask.csdn.net/questions/","bbs.csdn.net/topics/","www.csdn.net/gather_.+/"]
+    var codeStyle = "";
+    var baiduSearchType = "title";
+    var canRead = true;
+    var blogMoveHomeArticle = true;
+    var showPcWindowAd = false;
+    var showHeadWord = true;
+    var showSearchText = "";
+    var linkPage = true;
+    var articleSource = 4;
+    var articleReport = '{"pid": "blog", "spm":"1001.2101"}';
+    var isShowToQuestion = false;
+    var baiduSearchChannel = 'pc_relevant'
+    var baiduSearchIdentification = '.pc_relevant_aa'
+    var distRequestId = '1653895890316_37622'
+    var initRewardObject = {
+        giver: currentUserName,
+        anchor: username,
+        articleId: articleId,
+        sign: ''
+    }
+    var isLikeStatus = false;
+    var isUnLikeStatus = false;
+    var studyLearnWord = "";
+    var isCurrentUserVip = false;
+    var commentIsNewBeat = "oldStyle"
+</script>
+<div class="main_father clearfix d-flex justify-content-center " style="height:100%;"> 
+    <div class="container clearfix " id="mainBox">
+        <script>
+        if(!isCookieConcision){
+            $('.main_father').removeClass('mainfather-concision')
+            $('.main_father .container').removeClass('container-concision')
+        }
+        </script>
+        <main>
+<script type="text/javascript">
+    function getQueryString(name) {   
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象  
+      var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+      if( r != null ) return decodeURIComponent( r[2] ); return '';   
+    }
+    function stripscript(s){ 
+      var pattern = new RegExp("[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？%]") 
+      var rs = ""; 
+      for (var i = 0; i < s.length; i++) { 
+        rs = rs+s.substr(i, 1).replace(pattern, ''); 
+      } 
+      return rs; 
+    }
+    var blogHotWords = stripscript(getQueryString('utm_term')).length > 1 ? stripscript(getQueryString('utm_term')) : ''
+</script>
+<div class="blog-content-box">
+        <div class="article-header-box">
+        <div class="article-header">
+            <div class="article-title-box">
+                <h1 class="title-article" id="articleContentId">python open w wb_Python = 62/365</h1>
+            </div>
+            <div class="article-info-box">
+                <div class="article-bar-top">
+                    <div class="bar-content">
+                    <a class="follow-nickName " href="https://blog.csdn.net/weixin_39840606" target="_blank" rel="noopener">weixin_39840606</a>
+                    <img class="article-time-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newCurrentTime2.png" alt="">
+                    <span class="time">于&nbsp;2020-11-27 09:06:52&nbsp;发布</span>
+                    <img class="article-read-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/articleReadEyes2.png" alt="">
+                    <span class="read-count">80</span>
+                    <a id="blog_detail_zk_collection" class="un-collection" data-report-click='{"mod":"popu_823","spm":"1001.2101.3001.4232","ab":"new"}'>
+                        <img class="article-collect-img article-heard-img un-collect-status isdefault" style="display:inline-block" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollect2.png" alt="">
+                        <img class="article-collect-img article-heard-img collect-status isactive" style="display:none" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollectionActive2.png" alt="">
+                        <span class="name">收藏</span>
+                        <span class="get-collection">
+                        </span>
+                    </a>
+                    </div>
+                </div>
+                <div class="blog-tags-box">
+                    <div class="tags-box artic-tag-box">
+                            <span class="label">文章标签：</span>
+                                <a data-report-click='{"mod":"popu_626","spm":"1001.2101.3001.4223","strategy":"python open w wb","ab":"new"}' class="tag-link" href="https://so.csdn.net/so/search/s.do?q=python+open+w+wb&amp;t=blog&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=" target="_blank" rel="noopener">python open w wb</a>
+                    </div>
+                </div>
+                <div class="slide-content-box">
+                </div>
+                <div class="operating">
+                </div>
+            </div>
+        </div>
+    </div>
+    <article class="baidu_pl">
+        <div id="article_content" class="article_content clearfix">
+        <link rel="stylesheet" href="https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/ck_htmledit_views-163de54645.css">
+                <div id="content_views" class="htmledit_views">
+                    <div class="._5ce-wx-style" style="font-size:16px;"> 
+ <div class="rich_media_content" id="js_content"> 
+  ●
+  <strong>Python &#61; 62/365</strong>
+  ●
+  <p>Python的主要功能还是控制程序的执行流程&#xff0c;Python的代码主要是控制代码。Python的文件操作&#xff0c;让数据文件和结果能够进行相互的操作&#xff0c;绝对是常用中的常用&#xff01;文件的主要操作包括文件的打开&#xff0c;关闭&#xff0c;读写。</p>
+  <img src="https://img-blog.csdnimg.cn/img_convert/892bd976c06da4543a6264c6db78bafd.png" alt="892bd976c06da4543a6264c6db78bafd.png" />
+  <p>日更不停&#xff0c;你看行不行&#xff1f;</p>
+  <p><strong>我带着你&#xff0c;你带着Python Flag&#xff0c;共勉&#xff01;</strong></p>
+  <strong>No.1 Python-文件打开</strong>
+  <pre><code></code></pre>
+  <p><code>到现在为止&#xff0c;已经学习了读取和写入标准输入和输出。现在&#xff0c;我们学习如何使用文件实际数据。Python提供了基本的功能和必要的默认操作文件的方法。可以使用一个 file 对象来做大部分的文件操作。</code></p>
+  <code></code>
+  <pre class="has"><code>fo &#61; open(&#34;python365.txt&#34;, &#34;wb&#34;)print (&#34;Name of the file: &#34;, fo.name)print (&#34;Closed or not : &#34;, fo.closed)print (&#34;Opening mode : &#34;, fo.mode)fo.close()</code></pre>
+  <pre><code></code></pre>
+  <ul><li><p>文件名: 必需&#xff0c;文件路径(相对或者绝对路径)。例如python365.txt</p></li><li><p>模式: 可选&#xff0c;文件打开模式。例如&#xff0c;wb</p></li></ul>
+  <p>注意&#xff1a;使用 open() 方法一定要保证关闭文件对象&#xff0c;即调用 close() 方法。</p>
+  No.2 Python-文件打开模式
+  <p>在上例中出现的wb就是文件打开模式。常用的如表中所示。</p>
+  <table><tbody><tr><td>t</td><td>文本模式</td><td>w</td><td>打开一个文件只用于写入。如果该文件已存在则打开文件&#xff0c;并从开头开始编辑&#xff0c;即原有内容会被删除。如果该文件不存在&#xff0c;创建新文件。</td></tr><tr><td>b</td><td>二进制模式</td><td>w&#43;</td><td>打开一个文件用于读写。如果该文件已存在则打开文件&#xff0c;并从开头开始编辑&#xff0c;即原有内容会被删除。如果该文件不存在&#xff0c;创建新文件。</td></tr><tr><td>r</td><td>只读方式</td><td>a</td><td>打开一个文件用于追加。如果该文件已存在&#xff0c;文件指针将会放在文件的结尾。也就是说&#xff0c;新的内容将会被写入到已有内容之后。如果该文件不存在&#xff0c;创建新文件进行写入</td></tr><tr><td>r&#43;</td><td>打开一个文件用于读写。文件指针将会放在文件的开头。</td><td>a&#43;</td><td>打开一个文件用于读写。如果该文件已存在&#xff0c;文件指针将会放在文件的结尾。文件打开时会是追加模式。如果该文件不存在&#xff0c;创建新文件用于读写。</td></tr></tbody></table>
+  No.3 Python-文件关闭
+  
+  可以通过在fopen中创建的文件对象直接关闭文件。在上例中出现的fo就是文件对象。
+  <pre class="has"><code>fo.close()</code></pre>
+  
+  <p>文件是Python的左膀右臂啊&#xff01;</p>
+  <p><img src="https://img-blog.csdnimg.cn/img_convert/877edf91d538985d9b24ec66216a35d8.png" alt="877edf91d538985d9b24ec66216a35d8.png" /></p>
+  <ul><li><p>Python365专辑</p></li></ul>
+  <strong>Python&#xff0c;365&#xff01;</strong>
+  <img src="https://img-blog.csdnimg.cn/img_convert/44d26e0f11538d7cf0f1dfde0222b8bd.png" alt="44d26e0f11538d7cf0f1dfde0222b8bd.png" />
+  <img src="https://img-blog.csdnimg.cn/img_convert/c2f0904c22e5667df374bf9f08d02c8b.png" alt="c2f0904c22e5667df374bf9f08d02c8b.png" />
+  <img src="https://img-blog.csdnimg.cn/img_convert/de7a098290c466298e49ac310fb74739.png" alt="de7a098290c466298e49ac310fb74739.png" />
+ </div> 
+</div>
+                </div>
+        </div>
+        <div id="treeSkill"></div>
+<div id="recommendDown">
+</div>    </article>
+  <script>
+  $(function() {
+    setTimeout(function () {
+      var mathcodeList = document.querySelectorAll('.htmledit_views img.mathcode');
+      if (mathcodeList.length > 0) {
+        var testImg = new Image();
+        testImg.onerror = function () {
+          mathcodeList.forEach(function (item) {
+            $(item).before('<span class="img-codecogs">\\(' + item.alt + '\\)</span>');
+            $(item).remove();
+          })
+          MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+        }
+        testImg.src = mathcodeList[0].src;
+      }
+    }, 1000)
+  })
+  </script>
+</div>
+<div class="more-toolbox-new" id="toolBarBox">
+    <div class="left-toolbox">
+        <div class="toolbox-left">
+            <div class="profile-box"><a class="profile-href" target="_blank" href="https://blog.csdn.net/weixin_39840606"><img class="profile-img" src="https://profile.csdnimg.cn/C/9/5/3_weixin_39840606"><span class="profile-name">weixin_39840606</span></a></div>
+            <div class="profile-attend">
+                    <a class="tool-attend tool-bt-button tool-bt-attend" href="javascript:;" data-report-view='{"mod":"1592215036_002","spm":"1001.2101.3001.4232","extend1":"关注"}'>关注</a>
+                <a class="tool-item-follow active-animation" style="display:none;">关注</a>
+            </div>
+        </div>
+        <div class="toolbox-middle">
+        <ul class="toolbox-list">
+            <li class="tool-item tool-item-size tool-active is-like" id="is-like">
+            <a class="tool-item-href">
+                <img style="display:none;" id="is-like-imgactive-animation-like" class="animation-dom active-animation" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarThumbUpactive.png" alt="">
+                <img class="isactive" style="display:none" id="is-like-imgactive" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newHeart2021Active.png" alt="">
+                <img class="isdefault" style="display:block" id="is-like-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newHeart2021White.png" alt="">  
+                <span id="spanCount" class="count ">
+                        0
+                </span>
+            </a>
+            <div class="tool-hover-tip"><span class="text space">点赞</span></div>
+            </li>
+            <li class="tool-item tool-item-size tool-active is-unlike" id="is-unlike">
+            <a class="tool-item-href">
+                <img class="isactive" style="margin-right:0px;display:none" id="is-unlike-imgactive" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newUnHeart2021Active.png" alt="">
+                <img class="isdefault" style="margin-right:0px;display:block" id="is-unlike-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newUnHeart2021White.png" alt="">
+                <span id="unlikeCount" class="count "></span>
+            </a>
+            <div class="tool-hover-tip"><span class="text space">踩</span></div>
+            </li>
+            <li class="tool-item tool-item-size tool-active tool-item-comment">
+            <a class="tool-item-href" href="#commentBox" data-report-click='{"spm":"1001.2101.3001.7009"}'>
+                <img class="isdefault" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newComment2021White.png" alt="">
+                <span class="count">
+                    0
+                </span>
+            </a>
+            <div class="tool-hover-tip"><span class="text space">评论</span></div>
+            </li>
+            <li class="tool-item tool-item-size tool-active is-collection ">
+            <a class="tool-item-href" href="javascript:;" data-report-click='{"mod":"popu_824","spm":"1001.2101.3001.4130","ab":"new"}'>
+                <img style="display:none" id="is-collection-img-collection" class="animation-dom active-animation" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollectionActive.png" alt="">
+                <img class="isdefault" id="is-collection-img" style="display:block" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newCollectWhite.png" alt="">
+                <img class="isactive" id="is-collection-imgactive" style="display:none" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newCollectActive.png" alt="">
+                <span class="count get-collection " id="get-collection">
+                    0
+                </span>
+            </a>
+            <div class="tool-hover-tip"><span class="text space">收藏</span></div>
+            </li>
+            <li class="tool-item tool-item-bar">
+            </li>
+            <li class="tool-item tool-item-size tool-active tool-QRcode" id="tool-share">
+                <a class="tool-item-href" href="javascript:;" data-report-click='{"mod":"1582594662_002","spm":"1001.2101.3001.4129","ab":"new"}'>
+                    <img class="isdefault" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newShareWhite.png" alt="">
+                </a>
+                <div class="QRcode" id="tool-QRcode">
+                    <p class="title">
+                    扫一扫，分享内容
+                    </p>
+                    <div id='shareCode'></div>
+                    <a id="copyPosterUrl" class="url" data-report-click='{"spm":"1001.2101.3001.7493"}' data-report-view='{"spm":"1001.2101.3001.7493"}'>点击复制链接</a>
+                </div>
+            </li>
+        </ul>
+        </div>
+        <div class="toolbox-right">
+        </div>
+    </div>  
+</div>
+<script type=text/javascript crossorigin src="https://csdnimg.cn/release/phoenix/production/qrcode-7c90a92189.min.js"></script>
+<script src="//g.csdnimg.cn/??sharewx/1.2.1/sharewx.js" type="text/javascript"></script>
+<script type="text/javascript" crossorigin src="https://g.csdnimg.cn/user-login/3.0.1/user-login.js"></script>
+<script type="text/javascript" crossorigin src="https://g.csdnimg.cn/collection-box/2.1.0/collection-box.js"></script>
+                <div class="first-recommend-box recommend-box">
+<div class="recommend-item-box type_download clearfix" data-url="https://download.csdn.net/download/weixin_38621272/12867608"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6661.1","mod":"popu_871","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant_t0.none-task-download-2~default~CTRLIST~Paid-1-12867608-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"1","strategy":"2~default~CTRLIST~Paid","dest":"https://download.csdn.net/download/weixin_38621272/12867608"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://download.csdn.net/download/weixin_38621272/12867608" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6661.1","mod":"popu_871","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant_t0.none-task-download-2~default~CTRLIST~Paid-1-12867608-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"1","strategy":"2~default~CTRLIST~Paid","dest":"https://download.csdn.net/download/weixin_38621272/12867608"}'  data-report-query='spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-12867608-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-12867608-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>python</em> 将print输出的内容保存到txt文件中</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info display-flex">
+					<span class="info-block">09-20</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://download.csdn.net/download/weixin_38621272/12867608" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6661.1","mod":"popu_871","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant_t0.none-task-download-2~default~CTRLIST~Paid-1-12867608-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"1","strategy":"2~default~CTRLIST~Paid","dest":"https://download.csdn.net/download/weixin_38621272/12867608"}'  data-report-query='spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-12867608-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant_t0.none-task-download-2%7Edefault%7ECTRLIST%7EPaid-1-12867608-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">本文通过代码给大家介绍了<em>python</em> 将print输出的内容保存到txt文件中,代码很简短，需要的朋友可以参考下</div>
+			</a>
+		</div>
+	</div>
+</div>
+                </div>
+            <script src="https://csdnimg.cn/release/blogv2/dist/components/js/pc_wap_commontools-6cd02ebed1.min.js" type="text/javascript" async></script>
+            <div class="second-recommend-box recommend-box">
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/weixin_39942488/article/details/110317817"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.1","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1-110317817-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"1","strategy":"2~default~CTRLIST~default","dest":"https://blog.csdn.net/weixin_39942488/article/details/110317817"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/weixin_39942488/article/details/110317817" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.1","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1-110317817-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"1","strategy":"2~default~CTRLIST~default","dest":"https://blog.csdn.net/weixin_39942488/article/details/110317817"}'  data-report-query='spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-110317817-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-110317817-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>python</em> <em>open</em> w <em>wb</em>_<em>Python</em>关于 文件读写的总结</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/weixin_39942488" target="_blank"><span class="blog-title">weixin_39942488的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">11-21</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					1276
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/weixin_39942488/article/details/110317817" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.1","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1-110317817-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"1","strategy":"2~default~CTRLIST~default","dest":"https://blog.csdn.net/weixin_39942488/article/details/110317817"}'  data-report-query='spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-110317817-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1-110317817-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1"># 文件的操作
+# 打开文件 <em>open</em>
+# 默认的编码是gbk 这个是中文编码，最好的习惯呢就是我们再打开一个文件的时候
+# 给它指定一个编码类型
+# fobj<em>=</em><em>open</em>(&#39;./Test.txt&#39;,&#39;w&#39;,encoding<em>=</em>&#39;utf-8&#39;)
+# # 开始操作 读/写操作
+# fobj.write(&#39;在苍茫的大海上&#39;)
+# fobj.write(&#39;狂风卷积着乌云&#39;)
+# fobj.write(&#39;在乌...</div>
+			</a>
+		</div>
+	</div>
+</div>
+            </div>
+<a id="commentBox" name="commentBox"></a>
+<div id="pcCommentBox" class="comment-box comment-box-new unlogin-comment-box-new">
+	<div class="unlogin-comment-model">
+			<span class="unlogin-comment-tit">参与评论</span>
+			<span class="unlogin-comment-text">您还未登录，请先</span>
+			<span class="unlogin-comment-bt">登录</span>
+			<span class="unlogin-comment-text">后发表或查看评论</span>
+	</div>
+</div>
+            <div class="recommend-box insert-baidu-box recommend-box-style">
+                <div class="recommend-item-box clearfix no-index" style="display:none"></div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/taoshengyijiuzt/article/details/47067753"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.2","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-2-47067753-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"2","strategy":"2~default~CTRLIST~default","dest":"https://blog.csdn.net/taoshengyijiuzt/article/details/47067753"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/taoshengyijiuzt/article/details/47067753" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.2","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-2-47067753-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"2","strategy":"2~default~CTRLIST~default","dest":"https://blog.csdn.net/taoshengyijiuzt/article/details/47067753"}'  data-report-query='spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-47067753-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-47067753-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>Python</em>的<em>open</em>函数</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/taoshengyijiuzt" target="_blank"><span class="blog-title">taoshengyijiuzt的专栏</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">07-26</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					1595
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/taoshengyijiuzt/article/details/47067753" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.2","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-2-47067753-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"2","strategy":"2~default~CTRLIST~default","dest":"https://blog.csdn.net/taoshengyijiuzt/article/details/47067753"}'  data-report-query='spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-47067753-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-47067753-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">打开一个文件并向其写入内容
+
+<em>Python</em>的<em>open</em>方法用来打开一个文件。第一个参数是文件的位置和文件名，第二个参数是读写模式。这里我们采用w模式，也就是写模式。在这种模式下，文件原有的内容将会被删除。
+#to write
+testFile <em>=</em>&nbsp;<em>open</em>(&#39;cainiao.txt&#39;,&#39;w&#39;)
+#error testFile.write(u&#39;菜鸟写<em>Python</em>!&#39;)
+#写入一个字符串</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/weixin_39661345/article/details/110019924"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.3","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-3-110019924-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"3","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/weixin_39661345/article/details/110019924"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/weixin_39661345/article/details/110019924" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.3","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-3-110019924-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"3","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/weixin_39661345/article/details/110019924"}'  data-report-query='spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-3-110019924-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-3-110019924-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>python</em>保存data到txt_【<em>python</em>】读取和输出到txt</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/weixin_39661345" target="_blank"><span class="blog-title">weixin_39661345的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">11-23</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					590
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/weixin_39661345/article/details/110019924" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.3","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-3-110019924-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"3","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/weixin_39661345/article/details/110019924"}'  data-report-query='spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-3-110019924-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-3-110019924-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">读取txt的数据和把数据保存到txt中是经常要用到的，下面我就总结一下。读txt文件<em>python</em>常用的读取文件函数有三种read()、readline()、readlines()以读取上述txt为例，我们一起来看一下三者的区别read() 一次性读全部内容read()   #一次性读取文本中全部的内容，以字符串的形式返回结果with <em>open</em>(&quot;test.txt&quot;, &quot;r&quot;) as f:    #...</div>
+			</a>
+		</div>
+	</div>
+</div>
+		<dl id="recommend-item-box-tow" class="recommend-item-box type_blog clearfix">
+			
+		</dl>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/qq_42526963/article/details/111287358"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.4","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-4-111287358-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"4","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/qq_42526963/article/details/111287358"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/qq_42526963/article/details/111287358" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.4","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-4-111287358-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"4","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/qq_42526963/article/details/111287358"}'  data-report-query='spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-4-111287358-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-4-111287358-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>python</em>输出为txt文件</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/qq_42526963" target="_blank"><span class="blog-title">qq_42526963的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">12-16</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					8301
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/qq_42526963/article/details/111287358" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.4","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-4-111287358-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"4","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/qq_42526963/article/details/111287358"}'  data-report-query='spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-4-111287358-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-4-111287358-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">.输出到文件print函数
+print函数除了打印到控制台，同时还提供了输出到文件的功能，其默认输出文件是sys.stdout,意味着控制台输出
+
+
+f <em>=</em> <em>open</em>(&#39;log.txt&#39;,&#39;w&#39;)
+for i in range(100):
+    print(str(i), file<em>=</em>f)
+f.close()
+
+
+1
+	2
+	3
+	4
+2. 输出到文件 I/O
+将信息输出到文件最直接的方法是使用文件I/O：
+
+
+f <em>=</em> <em>open</em>(&#39;log.txt&#39;,&#39;w&#39;)
+for i in range(100):
+   </div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/weixin_37988176/article/details/109414472"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.5","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-5-109414472-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"5","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/weixin_37988176/article/details/109414472"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/weixin_37988176/article/details/109414472" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.5","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-5-109414472-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"5","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/weixin_37988176/article/details/109414472"}'  data-report-query='spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-5-109414472-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-5-109414472-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>python</em>文件读取输出-<em>Python</em> 读取和输出到txt</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/weixin_37988176" target="_blank"><span class="blog-title">weixin_37988176的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">11-01</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					5136
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/weixin_37988176/article/details/109414472" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.5","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-5-109414472-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"5","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/weixin_37988176/article/details/109414472"}'  data-report-query='spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-5-109414472-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-5-109414472-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">读txt文件<em>python</em>常用的读取文件函数有三种read()、readline()、readlines()read() #一次性读取文本中全部的内容，以字符串的形式返回结果with <em>open</em>(&quot;test.txt&quot;, &quot;r&quot;) as f: #打开文件data <em>=</em> f.read() #读取文件print(data)readline() #只读取文本第一行的内容，...</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/m0_57133047/article/details/124692399"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.6","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-6-124692399-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"6","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/m0_57133047/article/details/124692399"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/m0_57133047/article/details/124692399" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.6","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-6-124692399-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"6","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/m0_57133047/article/details/124692399"}'  data-report-query='spm=1001.2101.3001.6650.6&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-6-124692399-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-6-124692399-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>Python</em>如何把运行结果保存到相应txt文件中</div>
+					<div class="tag">最新发布</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/m0_57133047" target="_blank"><span class="blog-title">m0_57133047的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">05-10</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					571
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/m0_57133047/article/details/124692399" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.6","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-6-124692399-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"6","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/m0_57133047/article/details/124692399"}'  data-report-query='spm=1001.2101.3001.6650.6&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-6-124692399-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-6-124692399-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">def text_create(name):
+# 此处是服务器地址，可以改为本地
+desktop_path <em>=</em> &ldquo;D:\<em>Python</em>\<em>Python</em>.m\TEST\venv\Scripts\A\&rdquo;
+# 新创建的txt文件的存放路径
+full_path <em>=</em> desktop_path + name + &lsquo;.txt&rsquo;  # 也可以创建一个.doc的word文档
+file <em>=</em> <em>open</em>(full_path, &lsquo;w&rsquo;)
+filename <em>=</em> &lsquo;log&rsquo;
+text_create(filename)
+output <em>=</em> sy</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/yizhuanlu9607/article/details/78084266"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.7","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-7-78084266-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"7","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/yizhuanlu9607/article/details/78084266"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/yizhuanlu9607/article/details/78084266" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.7","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-7-78084266-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"7","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/yizhuanlu9607/article/details/78084266"}'  data-report-query='spm=1001.2101.3001.6650.7&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-7-78084266-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-7-78084266-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>python</em>打开文件时&#39;w&#39;与&#39;<em>wb</em>&#39;的区别,&#39;r&#39;与&#39;rb&#39;的区别</div>
+					<div class="tag">热门推荐</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/yizhuanlu9607" target="_blank"><span class="blog-title">谷永超 G-vitro的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">09-25</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					5万+
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/yizhuanlu9607/article/details/78084266" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.7","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-7-78084266-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"7","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/yizhuanlu9607/article/details/78084266"}'  data-report-query='spm=1001.2101.3001.6650.7&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-7-78084266-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-7-78084266-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">在windows中的换行符是\r\n
+在<em>python</em>代码中, 如果以
+
+如果以w方式写入:
+f <em>=</em> <em>open</em>(&#39;./abcd&#39;, &quot;w&quot;)
+f.write(&#39;abc\nabcd&#39;)
+f.close()
+文本w方式写入时, 遇到\n自动替换成\r\n,
+
+以二进制文本读:
+
+&gt;&gt; &gt; f <em>=</em> <em>open</em>(&#39;./abcd&#39;, &#39;rb&#39;)
+&gt;&gt; &gt; print(f.r...</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://liushipeng.blog.csdn.net/article/details/80066770"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.8","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-8-80066770-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"8","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://liushipeng.blog.csdn.net/article/details/80066770"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://liushipeng.blog.csdn.net/article/details/80066770" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.8","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-8-80066770-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"8","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://liushipeng.blog.csdn.net/article/details/80066770"}'  data-report-query='spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-8-80066770-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-8-80066770-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>python</em> 执行结果输出为txt</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/ever_peng" target="_blank"><span class="blog-title">沉默的鹏先生</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">04-24</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					2万+
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://liushipeng.blog.csdn.net/article/details/80066770" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.8","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-8-80066770-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"8","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://liushipeng.blog.csdn.net/article/details/80066770"}'  data-report-query='spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-8-80066770-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-8-80066770-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">name <em>=</em>[&#39;a1&#39;,&#39;a2&#39;,&#39;a3&#39;]
+f <em>=</em> <em>open</em>(&quot;F:/name.txt&quot;, &quot;w+&quot;)
+f.write(&quot;name&quot;)</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/weixin_39831705/article/details/109879080"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.9","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-9-109879080-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"9","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/weixin_39831705/article/details/109879080"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/weixin_39831705/article/details/109879080" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.9","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-9-109879080-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"9","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/weixin_39831705/article/details/109879080"}'  data-report-query='spm=1001.2101.3001.6650.9&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-9-109879080-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-9-109879080-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>python</em>列表写入txt文件_<em>Python</em>：将 list 写入一个 txt 文件</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/weixin_39831705" target="_blank"><span class="blog-title">weixin_39831705的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">11-20</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					2261
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/weixin_39831705/article/details/109879080" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.9","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-9-109879080-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"9","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/weixin_39831705/article/details/109879080"}'  data-report-query='spm=1001.2101.3001.6650.9&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-9-109879080-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-9-109879080-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">原博文2020-04-18 00:41 &minus;# coding:utf-8&quot;&quot;&quot; 一个数据list of dict如下a <em>=</em> [   {&quot;Jodie1&quot;: &quot;123&quot;},   {&quot;Jodie2&quot;: &quot;456&quot;},   {&quot;Jodie3&quot;: &quot;789&quot;},   ]写入到本地一个txt文件，内容格式如下：Jodie1,123Jodie2,...相关推荐2019-09-11 18:11 &minus;1 from xl...</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/young2415/article/details/76595318"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.10","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-10-76595318-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"10","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/young2415/article/details/76595318"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/young2415/article/details/76595318" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.10","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-10-76595318-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"10","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/young2415/article/details/76595318"}'  data-report-query='spm=1001.2101.3001.6650.10&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-10-76595318-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-10-76595318-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>Python</em>3.6笔记之将程序运行结果输出到文件</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/young2415" target="_blank"><span class="blog-title">supermouse的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">08-02</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					3万+
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/young2415/article/details/76595318" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.10","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-10-76595318-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"10","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/young2415/article/details/76595318"}'  data-report-query='spm=1001.2101.3001.6650.10&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-10-76595318-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-10-76595318-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">新建py文件，在里面写入<em>Python</em>代码，代码的功能是打印10次&ldquo;Hello!&rdquo;： 
+在命令行中运行<em>Python</em>脚本，并将运行结果保存到文件中： 
+（在此之前，要确保设置了环境变量） 
+首先，来到<em>Python</em>脚本所在目录： 
+ 
+输入： 
+ 
+其中getHtml.py是已经写好的<em>Python</em>脚本，html.txt是目标文件，也就是要把脚本运行结果输出到html.txt中打开html.txt文件，可以</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/qq_36171645/article/details/88966127"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.11","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-11-88966127-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"11","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/qq_36171645/article/details/88966127"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/qq_36171645/article/details/88966127" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.11","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-11-88966127-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"11","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/qq_36171645/article/details/88966127"}'  data-report-query='spm=1001.2101.3001.6650.11&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-11-88966127-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-11-88966127-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1">关于<em>open</em>的模式</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/qq_36171645" target="_blank"><span class="blog-title">巨基的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">04-02</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					1677
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/qq_36171645/article/details/88966127" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.11","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-11-88966127-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"11","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/qq_36171645/article/details/88966127"}'  data-report-query='spm=1001.2101.3001.6650.11&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-11-88966127-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-11-88966127-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">关于<em>open</em>的模式
+w 写方式
+a 追加模式打开（从EOF开始，必要时创建新文件）
+r+ 以读写模式打开
+w+ 以读写模式打开
+a+ 以读写模式打开
+rb 以二进制读模式打开
+<em>wb</em> 以二进制写模式打开 (参见 w )
+ab 以二进制追加模式打开 (参见 a )
+rb+ 以二进制读写模式打开 (参见 r+ )
+<em>wb</em>+ 以二进制读写模式打开 (参见 w+ )
+ab+ 以二进制读写模式打开 (参见 a+...</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/qq_42102546/article/details/122880558"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.12","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-12-122880558-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"12","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/qq_42102546/article/details/122880558"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/qq_42102546/article/details/122880558" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.12","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-12-122880558-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"12","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/qq_42102546/article/details/122880558"}'  data-report-query='spm=1001.2101.3001.6650.12&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-12-122880558-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-12-122880558-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>python</em> 函数 与 <em>open</em>打开文件的三种模式：r读、w写、a追加、</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/qq_42102546" target="_blank"><span class="blog-title">雪剑封心</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">02-11</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					1091
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/qq_42102546/article/details/122880558" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.12","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-12-122880558-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"12","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/qq_42102546/article/details/122880558"}'  data-report-query='spm=1001.2101.3001.6650.12&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-12-122880558-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-12-122880558-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">函数
+# 条件判断 if elif else
+# 循环语句：循环启动条件、循环结束条件
+# while循环
+# for循环  生成器 range()
+# 终止循环，并且跳出整个循环 break
+# 终止当前循环，跳出该次循环，执行下一次循环 continue
+# 什么都不做 pass  是空语句，是为了保持程序结构的完整性
+# 嵌套 循环-判断
+# 导入模块
+
+# 以上略过
+
+# 函数
+
+# 全局变量，在函数内的变量叫 局部变量
+g <em>=</em> 11
+
+# 注意位置顺序：不定长参数2 必须倒数第一，默认参数 必须倒</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/weixin_50920579/article/details/124236697"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.13","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-13-124236697-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"13","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/weixin_50920579/article/details/124236697"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/weixin_50920579/article/details/124236697" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.13","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-13-124236697-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"13","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/weixin_50920579/article/details/124236697"}'  data-report-query='spm=1001.2101.3001.6650.13&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-13-124236697-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-13-124236697-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>python</em>存入输出到txt</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/weixin_50920579" target="_blank"><span class="blog-title">weixin_50920579的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">04-17</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					818
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/weixin_50920579/article/details/124236697" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.13","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-13-124236697-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"13","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/weixin_50920579/article/details/124236697"}'  data-report-query='spm=1001.2101.3001.6650.13&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-13-124236697-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-13-124236697-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1"><em>python</em>存入输出到txt</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/qq_41971835/article/details/115324144"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.14","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-14-115324144-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"14","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/qq_41971835/article/details/115324144"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/qq_41971835/article/details/115324144" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.14","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-14-115324144-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"14","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/qq_41971835/article/details/115324144"}'  data-report-query='spm=1001.2101.3001.6650.14&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-14-115324144-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-14-115324144-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>python</em> 将print输出的内容保存到txt文件中(简洁版)</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/qq_41971835" target="_blank"><span class="blog-title">然小梨的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">03-30</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					7843
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/qq_41971835/article/details/115324144" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.14","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-14-115324144-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"14","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/qq_41971835/article/details/115324144"}'  data-report-query='spm=1001.2101.3001.6650.14&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-14-115324144-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-14-115324144-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">看了一圈，觉得大家都写的太麻烦了。
+我是在处理地理数据时，需要打印图层信息，所以需要使用。
+以下附上脚本：
+import sys
+import os
+
+#将要输出保存的文件地址，若文件不存在，则会自动创建
+fw <em>=</em> <em>open</em>(&quot;C:\GitCode\product\test.txt&quot;, &#39;w&#39;) 
+#这里平时print(&quot;test&quot;)换成下面这行，就可以输出到文本中了
+fw.write(&quot;test&quot;)  
+# 换行
+fw.write(&quot;\n&quot;)    
+
+
+...</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/mandyjxm/article/details/80614275"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.15","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-15-80614275-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"15","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/mandyjxm/article/details/80614275"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/mandyjxm/article/details/80614275" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.15","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-15-80614275-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"15","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/mandyjxm/article/details/80614275"}'  data-report-query='spm=1001.2101.3001.6650.15&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-15-80614275-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-15-80614275-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>python</em> pandas 文件读取pd.read_csv、pd.read_excel</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/mandyjxm" target="_blank"><span class="blog-title">mandyjxm的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">06-07</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					7571
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/mandyjxm/article/details/80614275" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.15","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-15-80614275-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"15","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/mandyjxm/article/details/80614275"}'  data-report-query='spm=1001.2101.3001.6650.15&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-15-80614275-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-15-80614275-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">一、读取（1）read_csvimport&nbsp;pandas&nbsp;as&nbsp;pd&nbsp;mydata_txt&nbsp;<em>=</em>&nbsp;pd.read_csv(&#39;lucia_test.txt&#39;,&nbsp;sep<em>=</em>&#39;\n&#39;,&nbsp;encoding<em>=</em>&#39;utf8&#39;)print(mydata_txt)(2)pd.read_excel  ##可以用help(pd.read_excel)来查询#coding:utf-8import pandas as pdim...</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="recommend-item-box type_blog clearfix" data-url="https://blog.csdn.net/Nr0315/article/details/117513505"  data-report-view='{"ab":"new","spm":"1001.2101.3001.6650.16","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-16-117513505-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"16","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/Nr0315/article/details/117513505"}'>
+	<div class="content-box">
+		<div class="content-blog display-flex">
+			<div class="title-box">
+				<a href="https://blog.csdn.net/Nr0315/article/details/117513505" class="tit" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.16","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-16-117513505-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"16","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/Nr0315/article/details/117513505"}'  data-report-query='spm=1001.2101.3001.6650.16&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-16-117513505-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-16-117513505-blog-111179862.pc_relevant_aa'>
+					<div class="left ellipsis-online ellipsis-online-1"><em>python</em> 将print 输出结果保存在txt文件中</div>
+				</a>
+			</div>
+			<div class="info-box display-flex">
+				<div class="info">
+					<a href="https://blog.csdn.net/Nr0315" target="_blank"><span class="blog-title">Nr0315的博客</span></a>
+				</div>
+				<div class="info display-flex">
+					<span class="info-block time">06-03</span>
+					<span class="info-block read"><img class="read-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					6558
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="desc-box">
+			<a href="https://blog.csdn.net/Nr0315/article/details/117513505" target="_blank"  data-report-click='{"ab":"new","spm":"1001.2101.3001.6650.16","mod":"popu_387","extra":"{\"highlightScore\":0.0,\"utm_medium\":\"distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~default-16-117513505-blog-111179862.pc_relevant_aa\",\"dist_request_id\":\"1653895890316_37622\"}","dist_request_id":"1653895890316_37622","ab_strategy":"default","index":"16","strategy":"2~default~BlogCommendFromBaidu~default","dest":"https://blog.csdn.net/Nr0315/article/details/117513505"}'  data-report-query='spm=1001.2101.3001.6650.16&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-16-117513505-blog-111179862.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-16-117513505-blog-111179862.pc_relevant_aa'>
+				<div class="desc ellipsis-online ellipsis-online-1">在每一个print后的括号里加上 file <em>=</em> f，例如：
+
+
+
+
+f <em>=</em> <em>open</em>(&quot;output.txt&quot;, &quot;w&quot;)
+print(img,file <em>=</em> f)
+f.close()
+
+
+这里可以不用手动创建output.txt，因为程序会自动创建
+
+。
+</div>
+			</a>
+		</div>
+	</div>
+</div>
+            </div>
+<div id="recommendNps" class="recommend-nps-box common-nps-box">
+  <h3 class="aside-title">“相关推荐”对你有帮助么？</h3>
+  <div class="aside-content">
+      <ul class="newnps-list">
+          <li class="newnps-item" data-type="非常没帮助">
+              <div class="newnps-img-box">
+                  <img class="newnps-img active" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeel1.png" alt="">
+                  <img class="newnps-img default" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeelGrey1.png" alt="">
+              </div>
+              <div class="newnps-text">非常没帮助</div>
+          </li>
+          <li class="newnps-item" data-type="没帮助">
+              <div class="newnps-img-box">
+                  <img class="newnps-img active" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeel2.png" alt="">
+                  <img class="newnps-img default" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeelGrey2.png" alt="">
+              </div>
+              <div class="newnps-text">没帮助</div>
+          </li>
+          <li class="newnps-item" data-type="一般">
+              <div class="newnps-img-box">
+                  <img class="newnps-img active" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeel3.png" alt="">
+                  <img class="newnps-img default" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeelGrey3.png" alt="">
+              </div>
+              <div class="newnps-text">一般</div>
+          </li>
+          <li class="newnps-item" data-type="有帮助">
+              <div class="newnps-img-box">
+                  <img class="newnps-img active" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeel4.png" alt="">
+                  <img class="newnps-img default" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeelGrey4.png" alt="">
+              </div>
+              <div class="newnps-text">有帮助</div>
+          </li>
+          <li class="newnps-item" data-type="非常有帮助">
+              <div class="newnps-img-box">
+                  <img class="newnps-img active" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeel5.png" alt="">
+                  <img class="newnps-img default" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeelGrey5.png" alt="">
+              </div>
+              <div class="newnps-text">非常有帮助</div>
+          </li>
+      </ul>
+      <div class="newnps-form-box">
+      <div class="newnps-form">
+          <input type="text" placeholder="请输入建议或反馈后点击提交" class="newnps-input">
+          <span class="newnps-btn">提交</span>
+      </div>
+      </div>
+  </div>
+</div>            <div class="template-box">
+                <span>©️2022 CSDN</span>
+                <span>皮肤主题：1024</span>
+                <span> 设计师：我叫白小胖</span>
+                <span>
+                    <a href="https://blog.csdn.net/" class="back-home c-blue c-blue-hover c-blue-focus">返回首页</a>
+                </span>
+            </div>
+<div class="blog-footer-bottom" style="margin-top:10px;"></div>
+<script src="https://g.csdnimg.cn/common/csdn-footer/csdn-footer.js" data-isfootertrack="false" type="text/javascript"></script>
+<script type="text/javascript">
+    window.csdn.csdnFooter.options = {
+        el: '.blog-footer-bottom',
+        type: 2
+    }
+</script>        </main>
+<aside class="blog_container_aside">
+<div id="asideProfile" class="aside-box">
+    <div class="profile-intro d-flex">
+        <div class="avatar-box d-flex justify-content-center flex-column">
+            <a href="https://blog.csdn.net/weixin_39840606" target="_blank" data-report-click='{"mod":"popu_379","spm":"1001.2101.3001.4121","dest":"https://blog.csdn.net/weixin_39840606","ab":"new"}'>
+                <img src="https://profile.csdnimg.cn/C/9/5/3_weixin_39840606" class="avatar_pic">
+            </a>
+        </div>
+        <div class="user-info d-flex flex-column profile-intro-name-box">
+            <div class="profile-intro-name-boxTop">
+                <a href="https://blog.csdn.net/weixin_39840606" target="_blank" class="" id="uid" title="weixin_39840606" data-report-click='{"mod":"popu_379","spm":"1001.2101.3001.4122","dest":"https://blog.csdn.net/weixin_39840606","ab":"new"}'>
+                    <span class="name " username="weixin_39840606">weixin_39840606</span>
+                </a>
+                <span>
+                </span>
+                <span class="flag expert-blog">
+                <span class="bubble">CSDN认证博客专家</span>
+                </span>
+                <span class="flag company-blog">
+                <span class="bubble">CSDN认证企业博客</span>
+                </span>
+            </div>
+            <div class="profile-intro-name-boxFooter">
+                <span class="personal-home-page personal-home-years" title="已加入 CSDN 5年">码龄5年</span>
+                    <span class="personal-home-page">
+                    <a class="personal-home-certification" href="https://i.csdn.net/#/uc/profile?utm_source=14998968" target="_blank" title="暂无认证">
+                    <img src="https://csdnimg.cn/identity/nocErtification.png" alt="">
+                    暂无认证
+                    </a>
+                    </span>
+            </div>
+        </div>
+    </div>
+    <div class="data-info d-flex item-tiling">
+        <dl class="text-center" title="144">
+            <a href="https://blog.csdn.net/weixin_39840606" data-report-click='{"mod":"1598321000_001","spm":"1001.2101.3001.4310"}' data-report-query="t=1">  
+                <dt><span class="count">144</span></dt>
+                <dd class="font">原创</dd>
+            </a>
+        </dl>
+        <dl class="text-center" data-report-click='{"mod":"1598321000_002","spm":"1001.2101.3001.4311"}' title="暂无排名">
+            <a href="https://blog.csdn.net/rank/list/weekly" target="_blank">
+                <dt><span class="count">-</span></dt>
+                <dd class="font">周排名</dd>
+            </a>
+        </dl>
+        <dl class="text-center" title="437349">
+            <a href="https://blog.csdn.net/rank/list/total" data-report-click='{"mod":"1598321000_003","spm":"1001.2101.3001.4312"}' target="_blank">
+                <dt><span class="count">43万+</span></dt>
+                <dd class="font">总排名</dd>
+            </a>
+        </dl>
+        <dl class="text-center" style="min-width:58px" title="152787">  
+            <dt><span class="count">15万+</span></dt>
+            <dd>访问</dd>
+        </dl>
+        <dl class="text-center" title="2级,点击查看等级说明">
+            <dt><a href="https://blog.csdn.net/blogdevteam/article/details/103478461" target="_blank">
+                <img class="level" src="https://csdnimg.cn/identity/blog2.png">
+            </a>
+            </dt>
+            <dd>等级</dd>
+        </dl>
+    </div>
+    <div class="item-rank"></div>
+    <div class="data-info d-flex item-tiling">
+        <dl class="text-center" title="140">
+            <dt><span class="count">140</span></dt>
+            <dd>积分</dd>
+        </dl>
+         <dl class="text-center" id="fanBox" title="10">
+            <dt><span class="count" id="fan">10</span></dt>
+            <dd>粉丝</dd>
+        </dl>
+        <dl class="text-center" title="26">
+            <dt><span class="count">26</span></dt>
+            <dd>获赞</dd>
+        </dl>
+        <dl class="text-center" title="0">
+            <dt><span class="count">0</span></dt>
+            <dd>评论</dd>
+        </dl>
+        <dl class="text-center" title="96">
+            <dt><span class="count">96</span></dt>
+            <dd>收藏</dd>
+        </dl>
+    </div>
+    <div class="aside-box-footer" data-report-view='{"spm":"3001.4296"}'>
+        <div class="badge-box d-flex">
+            <div class="badge d-flex">
+                <div class="icon-badge" title="勤写标兵Lv3">
+                    <div class="mouse-box">
+                        <img class="medal-img" data-report-click='{"spm":"3001.4296"}' src="https://csdnimg.cn/medal/qixiebiaobing3@240.png" alt="勤写标兵Lv3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profile-intro-name-boxOpration">
+        <div class="opt-letter-watch-box">
+        <a class="bt-button personal-letter" href="https://im.csdn.net/chat/weixin_39840606" target="_blank" rel="noopener">私信</a>
+        </div>
+        <div class="opt-letter-watch-box"> 
+            <a class="personal-watch bt-button" id="btnAttent" >关注</a>  
+        </div>
+    </div>
+</div>
+ <div id="asideSearchArticle" class="aside-box">
+	<div class="aside-content search-comter">
+    <div class="aside-search aside-search-blog">         
+        <input type="text" class="input-serch-blog" name="" autocomplete="off" value="" id="search-blog-words" placeholder="搜博主文章">
+        <a class="btn-search-blog">
+                    <img src="//csdnimg.cn/cdn/content-toolbar/csdn-sou.png?v=1587021042">
+        </a>
+    </div>
+    </div>
+</div>
+
+
+<div id="asideHotArticle" class="aside-box">
+	<h3 class="aside-title">热门文章</h3>
+	<div class="aside-content">
+		<ul class="hotArticle-list">
+			<li>
+				<a href="https://blog.csdn.net/weixin_39840606/article/details/113710623" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/weixin_39840606/article/details/113710623","ab":"new"}'>
+				单位元转换万元怎么转_元换算万元单位(元与万元的换算器)
+					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					<span class="read">34102</span>
+                </a>
+			</li>
+			<li>
+				<a href="https://blog.csdn.net/weixin_39840606/article/details/109796875" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/weixin_39840606/article/details/109796875","ab":"new"}'>
+				电脑主板接口_POWER SW、RESET SW、POWER LED、HDD LED电脑主板跳线怎么接？
+					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					<span class="read">5343</span>
+                </a>
+			</li>
+			<li>
+				<a href="https://blog.csdn.net/weixin_39840606/article/details/117961148" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/weixin_39840606/article/details/117961148","ab":"new"}'>
+				2021吉安一中高考成绩如何查询,吉安一中高考又创辉煌   欢迎有志青年携手奋进...
+					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					<span class="read">3256</span>
+                </a>
+			</li>
+			<li>
+				<a href="https://blog.csdn.net/weixin_39840606/article/details/113981506" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/weixin_39840606/article/details/113981506","ab":"new"}'>
+				python怎么创建多级目录_python实现一次创建多级目录的方法
+					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					<span class="read">3213</span>
+                </a>
+			</li>
+			<li>
+				<a href="https://blog.csdn.net/weixin_39840606/article/details/111394841" target="_blank"  data-report-click='{"mod":"popu_541","spm":"1001.2101.3001.4139","dest":"https://blog.csdn.net/weixin_39840606/article/details/111394841","ab":"new"}'>
+				springboot 单元测试_SpringBoot | 如何写Java单元测试？
+					<img src="https://csdnimg.cn/release/blogv2/dist/pc/img/readCountWhite.png" alt="">
+					<span class="read">3088</span>
+                </a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="asideNewNps" class="aside-box common-nps-box">
+    <h3 class="aside-title">您愿意向朋友推荐“博客详情页”吗？</h3>
+    <div class="aside-content">
+        <ul class="newnps-list">
+            <li class="newnps-item" data-type="强烈不推荐">
+                <div class="newnps-img-box">
+                    <img class="newnps-img active" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeel1.png" alt="">
+                    <img class="newnps-img default" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeelGrey1.png" alt="">
+                </div>
+                <div class="newnps-text">强烈不推荐</div>
+            </li>
+            <li class="newnps-item" data-type="不推荐">
+                <div class="newnps-img-box">
+                    <img class="newnps-img active" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeel2.png" alt="">
+                    <img class="newnps-img default" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeelGrey2.png" alt="">
+                </div>
+                <div class="newnps-text">不推荐</div>
+            </li>
+            <li class="newnps-item" data-type="一般般">
+                <div class="newnps-img-box">
+                    <img class="newnps-img active" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeel3.png" alt="">
+                    <img class="newnps-img default" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeelGrey3.png" alt="">
+                </div>
+                <div class="newnps-text">一般般</div>
+            </li>
+            <li class="newnps-item" data-type="推荐">
+                <div class="newnps-img-box">
+                    <img class="newnps-img active" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeel4.png" alt="">
+                    <img class="newnps-img default" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeelGrey4.png" alt="">
+                </div>
+                <div class="newnps-text">推荐</div>
+            </li>
+            <li class="newnps-item" data-type="强烈推荐">
+                <div class="newnps-img-box">
+                    <img class="newnps-img active" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeel5.png" alt="">
+                    <img class="newnps-img default" src="https://csdnimg.cn/release/blogv2/dist/pc/img/npsFeelGrey5.png" alt="">
+                </div>
+                <div class="newnps-text">强烈推荐</div>
+            </li>
+        </ul>
+        <div class="newnps-form-box">
+        <div class="newnps-form">
+            <input type="text" placeholder="请输入建议或反馈后点击提交" class="newnps-input">
+            <span class="newnps-btn">提交</span>
+        </div>
+        </div>
+    </div>
+</div>
+<div id="asideArchive" class="aside-box" style=" width:300px;">
+    <h3 class="aside-title">最新文章</h3>
+    <div class="aside-content">
+        <ul class="inf_list clearfix">
+            <li class="clearfix">
+            <a href="https://blog.csdn.net/weixin_39840606/article/details/119604261" target="_blank" data-report-click='{"mod":"popu_382","spm":"1001.2101.3001.4136","dest":"https://blog.csdn.net/weixin_39840606/article/details/119604261","ab":"new"}' data-report-view='{"mod":"popu_382","dest":"https://blog.csdn.net/weixin_39840606/article/details/119604261","ab":"new"}'>github作文件服务器,Git Github服务器搭建</a>
+            </li>
+            <li class="clearfix">
+            <a href="https://blog.csdn.net/weixin_39840606/article/details/119550442" target="_blank" data-report-click='{"mod":"popu_382","spm":"1001.2101.3001.4136","dest":"https://blog.csdn.net/weixin_39840606/article/details/119550442","ab":"new"}' data-report-view='{"mod":"popu_382","dest":"https://blog.csdn.net/weixin_39840606/article/details/119550442","ab":"new"}'>服务器系统盘需要多大就行,云服务器系统盘需要多大</a>
+            </li>
+            <li class="clearfix">
+            <a href="https://blog.csdn.net/weixin_39840606/article/details/119529574" target="_blank" data-report-click='{"mod":"popu_382","spm":"1001.2101.3001.4136","dest":"https://blog.csdn.net/weixin_39840606/article/details/119529574","ab":"new"}' data-report-view='{"mod":"popu_382","dest":"https://blog.csdn.net/weixin_39840606/article/details/119529574","ab":"new"}'>eve显示无法连接服务器,eve  链接不到服务器</a>
+            </li>
+        </ul>
+        <div class="archive-bar"></div>
+        <div class="archive-box">
+                <div class="archive-list-item"><a href="https://blog.csdn.net/weixin_39840606?type=blog&amp;year=2021&amp;month=08" target="_blank" data-report-click='{"mod":"popu_538","spm":"1001.2101.3001.4138","ab":"new","dest":"https://blog.csdn.net/weixin_39840606?type=blog&amp;year=2021&amp;month=08"}'><span class="year">2021年</span><span class="num">154篇</span></a></div>
+                <div class="archive-list-item"><a href="https://blog.csdn.net/weixin_39840606?type=blog&amp;year=2020&amp;month=12" target="_blank" data-report-click='{"mod":"popu_538","spm":"1001.2101.3001.4138","ab":"new","dest":"https://blog.csdn.net/weixin_39840606?type=blog&amp;year=2020&amp;month=12"}'><span class="year">2020年</span><span class="num">217篇</span></a></div>
+        </div>
+    </div>
+</div>
+	<div id="footerRightAds" class="isShowFooterAds">
+		<div class="aside-box">
+			<div id="kp_box_57" data-pid="57"><!-- google -->
+<ins class="adsbygoogle"
+  style="display:block"
+  data-ad-client="ca-pub-1076724771190722"
+  data-ad-slot="1894159733"
+  data-ad-format="auto"
+  data-full-width-responsive="true"
+>
+  <!-- 插入 万维广告 2-1 -->
+  <div class="wwads-cn wwads-vertical" data-id="149" style="margin-top: 0;margin-bottom: 8px;background-color: #fff;max-width:300px;"></div>
+  <!-- 插入 万维广告 3-1 -->
+</ins>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1076724771190722" crossorigin="anonymous"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<!-- 插入 万维广告 3-2 -->
+<script type="text/javascript" src="https://cdn.wwads.cn/js/makemoney.js" async></script>
+<!-- 插入 万维广告 3-2 -->
+
+<!-- 插入 万维广告 3-3 -->
+<style>
+  ins.adsbygoogle > .wwads-cn {
+    display: none !important;
+  }
+  ins.adsbygoogle[data-ad-status='unfilled'] {
+    height: auto !important;
+  }
+  ins.adsbygoogle[data-ad-status='unfilled'] > * {
+    display: none !important;
+  }
+  ins.adsbygoogle[data-ad-status='unfilled'] > .wwads-cn {
+    display: block !important;
+    text-align: center; /* 万维广告局中 */
+  }
+</style>
+<!-- 插入 万维广告 3-3 --><img class="pre-img-lasy" data-src="https://kunyu.csdn.net/1.png?p=57&adId=707&a=707&c=0&k=python open w wb_Python = 62/365&spm=1001.2101.3001.5001&articleId=111179862&d=1&t=3&u=917ac5f2ba534c40ac8ea7d676912099" style="display: block;width: 0px;height: 0px;"></div>
+		</div>
+	</div>
+    <!-- 详情页显示目录 -->
+<!--文章目录-->
+<div id="asidedirectory" class="aside-box">
+    <div class='groupfile' id="directory">
+        <h3 class="aside-title">目录</h3>
+        <div class="align-items-stretch group_item">
+            <div class="pos-box">
+            <div class="scroll-box">
+                <div class="toc-box"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</aside>
+<script>
+	$("a.flexible-btn").click(function(){
+		$(this).parents('div.aside-box').removeClass('flexible-box');
+		$(this).parents("p.text-center").remove();
+	})
+</script>
+<script type="text/javascript"  src="https://g.csdnimg.cn/user-tooltip/2.5/user-tooltip.js"></script>
+<script type="text/javascript"  src="https://g.csdnimg.cn/user-medal/1.0.7/user-medal.js"></script>    </div>
+<div class="recommend-right align-items-stretch clearfix" id="rightAside" data-type="recommend">
+    <aside class="recommend-right_aside">
+        <div id="recommend-right" >
+                        <div class='flex-column aside-box groupfile' id="groupfile">
+                <div class="groupfile-div">
+                <h3 class="aside-title">目录</h3>
+                <div class="align-items-stretch group_item">
+                    <div class="pos-box">
+                        <div class="scroll-box">
+                            <div class="toc-box"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+                <div id="recommendAdBox">
+                    <div id="kp_box_479" data-pid="479"><!-- google -->
+<ins class="adsbygoogle"
+  style="display:block"
+  data-ad-client="ca-pub-1076724771190722"
+  data-ad-slot="3484057394"
+  data-ad-format="auto"
+  data-full-width-responsive="true"
+>
+  <!-- 插入 万维广告 2-1 -->
+  <div class="wwads-cn wwads-vertical" data-id="149" style="margin-top: 0;margin-bottom: 8px;background-color: #fff;max-width:300px;"></div>
+  <!-- 插入 万维广告 3-1 -->
+</ins>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1076724771190722" crossorigin="anonymous"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<!-- 插入 万维广告 3-2 -->
+<script type="text/javascript" src="https://cdn.wwads.cn/js/makemoney.js" async></script>
+<!-- 插入 万维广告 3-2 -->
+
+<!-- 插入 万维广告 3-3 -->
+<style>
+  ins.adsbygoogle > .wwads-cn {
+    display: none !important;
+  }
+  ins.adsbygoogle[data-ad-status='unfilled'] {
+    height: auto !important;
+  }
+  ins.adsbygoogle[data-ad-status='unfilled'] > * {
+    display: none !important;
+  }
+  ins.adsbygoogle[data-ad-status='unfilled'] > .wwads-cn {
+    display: block !important;
+    text-align: center; /* 万维广告局中 */
+  }
+</style>
+<!-- 插入 万维广告 3-3 --><img class="pre-img-lasy" data-src="https://kunyu.csdn.net/1.png?p=479&adId=6036&a=6036&c=0&k=python open w wb_Python = 62/365&spm=1001.2101.3001.4834&articleId=111179862&d=1&t=3&u=9b1aa64d97e944fab06b523178064b59" style="display: block;width: 0px;height: 0px;"></div>
+                </div>
+<div id="asideArchive" class="aside-box" style=" width:300px;">
+    <h3 class="aside-title">最新文章</h3>
+    <div class="aside-content">
+        <ul class="inf_list clearfix">
+            <li class="clearfix">
+            <a href="https://blog.csdn.net/weixin_39840606/article/details/119604261" target="_blank" data-report-click='{"mod":"popu_382","spm":"1001.2101.3001.4136","dest":"https://blog.csdn.net/weixin_39840606/article/details/119604261","ab":"new"}' data-report-view='{"mod":"popu_382","dest":"https://blog.csdn.net/weixin_39840606/article/details/119604261","ab":"new"}'>github作文件服务器,Git Github服务器搭建</a>
+            </li>
+            <li class="clearfix">
+            <a href="https://blog.csdn.net/weixin_39840606/article/details/119550442" target="_blank" data-report-click='{"mod":"popu_382","spm":"1001.2101.3001.4136","dest":"https://blog.csdn.net/weixin_39840606/article/details/119550442","ab":"new"}' data-report-view='{"mod":"popu_382","dest":"https://blog.csdn.net/weixin_39840606/article/details/119550442","ab":"new"}'>服务器系统盘需要多大就行,云服务器系统盘需要多大</a>
+            </li>
+            <li class="clearfix">
+            <a href="https://blog.csdn.net/weixin_39840606/article/details/119529574" target="_blank" data-report-click='{"mod":"popu_382","spm":"1001.2101.3001.4136","dest":"https://blog.csdn.net/weixin_39840606/article/details/119529574","ab":"new"}' data-report-view='{"mod":"popu_382","dest":"https://blog.csdn.net/weixin_39840606/article/details/119529574","ab":"new"}'>eve显示无法连接服务器,eve  链接不到服务器</a>
+            </li>
+        </ul>
+        <div class="archive-bar"></div>
+        <div class="archive-box">
+                <div class="archive-list-item"><a href="https://blog.csdn.net/weixin_39840606?type=blog&amp;year=2021&amp;month=08" target="_blank" data-report-click='{"mod":"popu_538","spm":"1001.2101.3001.4138","ab":"new","dest":"https://blog.csdn.net/weixin_39840606?type=blog&amp;year=2021&amp;month=08"}'><span class="year">2021年</span><span class="num">154篇</span></a></div>
+                <div class="archive-list-item"><a href="https://blog.csdn.net/weixin_39840606?type=blog&amp;year=2020&amp;month=12" target="_blank" data-report-click='{"mod":"popu_538","spm":"1001.2101.3001.4138","ab":"new","dest":"https://blog.csdn.net/weixin_39840606?type=blog&amp;year=2020&amp;month=12"}'><span class="year">2020年</span><span class="num">217篇</span></a></div>
+        </div>
+    </div>
+</div>
+        </div>
+    </aside>
+</div>
+
+<div class="recommend-right1  align-items-stretch clearfix" id="rightAsideConcision" data-type="recommend">
+    <aside class="recommend-right_aside">
+        <div id="recommend-right-concision" >
+            <div class='flex-column aside-box groupfile' id="groupfileConcision">
+                <div class="groupfile-div1">
+                <h3 class="aside-title">目录</h3>
+                <div class="align-items-stretch group_item">
+                    <div class="pos-box">
+                        <div class="scroll-box">
+                            <div class="toc-box"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+
+</div>
+<div class="mask-dark"></div>
+<script type="text/javascript">
+    var timert = setInterval(function() {
+      sideToolbar = $(".csdn-side-toolbar");
+      if (sideToolbar.length > 0) {
+        sideToolbar.css('cssText','bottom:64px !important;')
+        clearInterval(timert);
+      }
+    }, 200);
+</script>
+<script src="https://csdnimg.cn/public/sandalstrap/1.4/js/sandalstrap.min.js"></script>
+<div class="skin-boxshadow"></div>
+<div class="directory-boxshadow"></div>
+<div class="pay-code">
+    <div class="pay-money">实付<span class="pay-money-span" data-nowprice='' data-oldprice=''>元</span></div>
+    <div class="content-blance"><a class="blance-bt" href="javascript:;">使用余额支付</a></div>
+    <div class="content-code">
+    <div id="payCode" data-id="">
+            <div class="renovate">
+                <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/pay-time-out.png">
+                <span>点击重新获取</span>
+            </div>
+        </div>
+        <div class="pay-style"><span><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/weixin.png"></span><span><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/zhifubao.png"></span><span><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/jingdong.png"></span><span class="text">扫码支付</span></div>
+    </div>
+    <div class="bt-close"><svg t="1567152543821" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10924" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12"><defs><style type="text/css"></style></defs><path d="M512 438.378667L806.506667 143.893333a52.032 52.032 0 1 1 73.6 73.621334L585.621333 512l294.485334 294.485333a52.074667 52.074667 0 0 1-73.6 73.642667L512 585.621333 217.514667 880.128a52.053333 52.053333 0 1 1-73.621334-73.642667L438.378667 512 143.893333 217.514667a52.053333 52.053333 0 1 1 73.621334-73.621334L512 438.378667z" fill="" p-id="10925"></path></svg></div>
+    <!-- <p style="margin-top: 8px;font-size: 14px;" class="text-center">支付成功即可阅读</p> -->
+    <div class="pay-balance">
+    <input type="radio" class="pay-code-radio" data-type="details"> 
+    <span class="span">钱包余额</span>
+    <span class="balance" style="color:#FC5531;font-size:14px;">0</span>  
+    <div class="pay-code-tile">
+        <img src="https://csdnimg.cn/release/blogv2/dist/pc/img/pay-help.png" alt="">
+        <div class="pay-code-content">
+            <div class="span">
+                <p class="title">抵扣说明：</p>
+                <p> 1.余额是钱包充值的虚拟货币，按照1:1的比例进行支付金额的抵扣。<br> 2.余额无法直接购买下载，可以购买VIP、C币套餐、付费专栏及课程。</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <a class="pay-balance-con" href="https://i.csdn.net/#/wallet/balance/recharge" target="_blank"><img src="https://csdnimg.cn/release/blogv2/dist/pc/img/recharge.png" alt=""><span  >余额充值</span></a>
+</div>
+<div style="display:none;">
+	<img src="" onerror='setTimeout(function(){if(!/(csdn.net|iteye.com|baiducontent.com|googleusercontent.com|360webcache.com|sogoucdn.com|bingj.com|baidu.com)$/.test(window.location.hostname)){window.location.href="\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x63\x73\x64\x6e\x2e\x6e\x65\x74"}},3000);'>
+</div>
+<div class="keyword-dec-box" id="keywordDecBox"></div>
+</body>
+    <!-- 富文本柱状图  -->
+	<link rel="stylesheet" href="https://csdnimg.cn/release/blog_editor_html/release1.6.12/ckeditor/plugins/chart/chart.css"/>
+	<script type="text/javascript" src="https://csdnimg.cn/release/blog_editor_html/release1.6.12/ckeditor/plugins/chart/lib/chart.min.js"></script>
+    <script type="text/javascript" src="https://csdnimg.cn/release/blog_editor_html/release1.6.12/ckeditor/plugins/chart/widget2chart.js"></script>
+<script src="https://csdnimg.cn/release/blogv2/dist/components/js/pc_wap_highlight-7e7de84184.min.js" type="text/javascript"></script>
+<script src="https://csdnimg.cn/release/blogv2/dist/components/js/pc_wap_common-fbcbe8567e.min.js" type="text/javascript"></script>
+<script src="https://csdnimg.cn/release/blogv2/dist/components/js/edit_copy_code-9c83e748f5.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://csdnimg.cn/release/blog_editor_html/release1.6.12/ckeditor/plugins/codesnippet/lib/highlight/styles/atom-one-light.css">
+<script src="https://g.csdnimg.cn/user-accusation/1.0.5/user-accusation.js" type="text/javascript" ></script>
+<script>
+ // 全局声明
+ if (window.csdn === undefined) {
+      window.csdn = {};
+    }
+    window.csdn.sideToolbar = {
+        options: {
+            report:{
+                isShow: true,
+            },
+            qr: {
+                isShow: false,
+            },
+            guide: {
+                isShow: true
+            }
+        }
+    }
+    $(function(){
+        $(document).on('click',"a.option-box[data-type='report']",function() {
+            window.csdn.userLogin.loadAjax(function(res){
+                window.csdn.feedback({
+                    "type":'blog',
+                    "rtype":'article',
+                    "rid":articleId,
+                    "reportedName":username,
+                    "submitOptions":{
+                        "title":articleTitle,
+                        "contentUrl":articleDetailUrl
+                    },
+                    "callback":function(){
+                        showToast({
+                            text: "感谢您的举报，我们会尽快审核！",
+                            bottom: '10%', 
+                            zindex: 9000, 
+                            speed: 500,
+                            time: 1500
+                        });
+                    }
+                })
+            })
+        });
+    })
+</script>
+    <script src="https://g.csdnimg.cn/baidu-search/1.0.11/baidu-search.js"  type="text/javascript"></script>
+<script src="https://csdnimg.cn/release/download/old_static/js/qrcode.js"></script>
+<script src="https://g.csdnimg.cn/lib/qrcode/1.0.0/qrcode.min.js"></script>
+<script src="https://g.csdnimg.cn/user-ordercart/3.0.0/user-ordercart.js" type="text/javascript"></script>
+<script src="https://g.csdnimg.cn/user-ordertip/4.1.3/user-ordertip.js" type="text/javascript" ></script>
+<script src="https://g.csdnimg.cn/order-payment/3.1.0/order-payment.js" type="text/javascript" ></script>
+<script src="https://csdnimg.cn/release/blogv2/dist/pc/js/common-a1dfbf1dc3.min.js" type="text/javascript"></script>
+<script src="https://csdnimg.cn/release/blogv2/dist/pc/js/detail-fe30dc476d.min.js" type="text/javascript"></script>
+<script src="https://csdnimg.cn/release/blogv2/dist/pc/js/column-021ccc1be7.min.js" type="text/javascript"></script>
+<script src="https://g.csdnimg.cn/side-toolbar/3.1/side-toolbar.js" type="text/javascript"></script>
+<script src="https://g.csdnimg.cn/copyright/1.0.4/copyright.js" type="text/javascript"></script>
+<script>
+    $(".MathJax").remove();
+    if ($('div.markdown_views pre.prettyprint code.hljs').length > 0) {
+        $('div.markdown_views')[0].className = 'markdown_views';
+    }
+</script>
+<script type="text/javascript" src="https://csdnimg.cn/release/blog_mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            "HTML-CSS": {
+                    linebreaks: { automatic: true, width: "94%container" },
+                    imageFont: null
+            },
+            tex2jax: {
+                preview: "none",
+                ignoreClass:"title-article"
+            },
+            mml2jax: {
+                preview: 'none'
+            }
+    });
+</script>
+<script type="text/javascript" crossorigin src="https://g.csdnimg.cn/common/csdn-login-box/csdn-login-box.js"></script></html>
