@@ -19024,6 +19024,7 @@ var account_pop={open:function(o,e){e?referrer="?referrer="+encodeURIComponent(e
 
 
 <script type="text/javascript">
+
 var _paq = _paq || [];
 _paq.push(['trackPageView']);
 _paq.push(['enableLinkTracking']);
@@ -19106,6 +19107,18 @@ for(var i = 0, l = accounts.length; i < l; i++) {
     ga.setAttribute('async', 'true');
     document.documentElement.firstChild.appendChild(ga);
 })()
+
+
+const oneStar=Math.abs($('#comments').find('.allstar10').length)
+const twoStar=Math.abs($('#comments').find('.allstar20').length)
+const threeStar=Math.abs($('#comments').find('.allstar30').length)
+const fourStar=Math.abs($('#comments').find('.allstar40').length)
+const fiveStar=Math.abs($('#comments').find('.allstar50').length)
+let sum=oneStar+twoStar+threeStar+fourStar+fiveStar
+let score=oneStar+twoStar*2+threeStar*3+fourStar*4+fiveStar*5
+let avg=(score/sum)*2
+    alert('1星:'+oneStar+';2星:'+twoStar+';3星:'+threeStar+';4星:'+fourStar+';5星:'+fiveStar)
+    alert('梦华录：有效评分：'+sum+',平均分：'+avg)
 
 
 </script>
