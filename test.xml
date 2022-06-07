@@ -1,0 +1,20 @@
+<book>
+    <id>1</id>
+    <name>大白便利店</name>
+    <price>16.40</price>
+    <nick>狗剩</nick>
+    <vegetables>
+        <food id="001">大白菜</food>
+        <food id="002">甜瓜</food>
+        <food class="cucumber">黄瓜</food>
+        <food class="potato">土豆</food>
+        <food class="tomato">西红柿</food>
+        <div>
+            <food>菠菜</food>
+        </div>
+    </vegetables>
+    <meet>
+        <food id="beaf">牛肉</food>
+        <food id="pork">猪肉</food>
+    </meet>
+</book>

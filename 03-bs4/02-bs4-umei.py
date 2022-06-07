@@ -38,11 +38,12 @@ for a in aList:
     # img_name=src.split('/')[-1] #获取url中的最后一个‘/’以后的内容
     # print(img_name)
 
-    with open('images\\'+img_name,mode='wb+')as f: # wb+ 防止爬的数据成为乱码
-        f.write(img_resp.content)
+    # with open('images\\'+img_name,mode='wb+')as f: # wb+ 防止爬的数据成为乱码
+        # f.write(img_resp.content)
 
-    print('over',img_name)
-    time.sleep(1)
+    # print('over',img_name)
+    # time.sleep(1)
 
-print('all_over')
+    print(img_resp.content)
+# print('all_over')
 
