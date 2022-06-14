@@ -6,7 +6,7 @@ import csv
 
 from concurrent.futures import ThreadPoolExecutor
 
-f=open('data.csv',mode='w',encoding='utf-8')
+f=open('zhongyaoprice.csv',mode='w',encoding='utf-8')
 csvWriter=csv.writer(f)
 
 def download_one_page(url):
