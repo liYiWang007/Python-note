@@ -9,7 +9,7 @@ import requests
 import time
 from bs4 import BeautifulSoup 
 url="https://www.tusij.com/img3rd/index?c3=601"
-# url="https://www.umei.cc/bizhitupian/weimeibizhi/"
+# url="https://www.umei.cc/bizhitupian/weimeibizhi/" #优美图库
 resp=requests.get(url)
 resp.encoding='utf-8'
 # print(resp)

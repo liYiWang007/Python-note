@@ -60,35 +60,39 @@ async def func3():
 #     t2 = time.time()
 #     print(t2-t1)  # 程序执行完毕时间
 
-# # 推荐写法
-# async def main():
-#     # 写法1：
-#     # f1=func1()
-#     # await f1
-#     # 写法2：
-#     tasks=[func1(),func2(),func3()]
-#     await asyncio.wait(tasks)
+# 推荐写法
+async def main():
+    # 写法1：
+    # f1=func1()
+    # await f1
+    # 写法2：(python3.8以后要用asyncio.create_task())
+    tasks = [asyncio.create_task(func1()),
+             asyncio.create_task(func2()),
+             asyncio.create_task(func3())]
+    await asyncio.wait(tasks)
 
 # if __name__ == '__main__':
 #     t1 = time.time()    # 程序开始执行时间
 #     asyncio.run(main())
 #     t2 = time.time()    # 程序执行完毕时间
-#     print(t2-t1) 
+#     print(t2-t1)
 
-async def download():
+
+async def download(url):
     print('准备下载')
-    await asyncio.sleep(2) #假装网络请求
+    await asyncio.sleep(2)  # 假装网络请求
     print('下载完成')
 
+
 async def main():
-    urls=[
+    urls = [
         "http://www.baidu.com",
         'https://www.sougou.com',
         'https://www.bing.com'
     ]
-    tasks=[]
+    tasks = []
     for url in urls:
-        d=download(url)
+        d = download(url)
         tasks.append(d)
     await asyncio.wait(tasks)
 
