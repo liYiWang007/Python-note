@@ -1,3 +1,4 @@
+# xpath练习 火狐浏览器主页新闻钻取 
 import requests
 from lxml import etree
 

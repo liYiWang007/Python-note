@@ -1,4 +1,4 @@
-
+# 异步协程练习：小说抓取（内容在xhr文件内）
 # url 书本地址
 # https://dushu.baidu.com/api/pc/getChapterContent?data={"book_id":"4306340004"}
 
