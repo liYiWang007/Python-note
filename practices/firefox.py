@@ -22,7 +22,7 @@ def open_firefox(url):
     # print(li)
     side=html.xpath('/html/body//div[@class="side"]//ul[@class="py-3 list-none"]')[0]
     side_li=side.xpath('./li/a/text()')
-    for i in 
+    # for i in 
     print([li,side_li])
 
 

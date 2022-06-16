@@ -20,7 +20,7 @@ table=html.xpath('//*[@id="oneboolt"]/tbody')[0]
 txt_name=table.xpath('./tr[1]/td/div/span/h1/span[@itemprop="articleSection"]/text()')[0]
 f=open(f'{txt_name}.txt',mode='w',encoding='utf-8')
 tr_list=table.xpath('./tr')[3:]
-print(len(tr_list))
+# print(len(tr_list))
 for tr in tr_list:
     chapter_hrefs=tr.xpath('./td[2]//a/@href')
     if(len(chapter_hrefs)==0):
