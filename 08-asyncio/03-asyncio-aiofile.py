@@ -26,7 +26,7 @@ async def aioDownload(cid,b_id,title):
         async with session.get(url) as resp:
             dic=await resp.json()
             #利用双斜杠把小说放进novels文件夹内
-            async with aiofiles.open('novels\\'+title,mode='w',encoding='utf-8') as f:
+            async with aiofiles.open('novels\\'+title+'.txt',mode='w',encoding='utf-8') as f:
                 await f.write(dic['data']['novel']['content'])
             
 
