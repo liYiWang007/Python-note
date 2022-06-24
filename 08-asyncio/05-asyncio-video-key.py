@@ -135,6 +135,7 @@ def main(url):
     first_m3u8=get_first_m3u8(url)  #第一层m3u8地址
     # print(first_m3u8) -> https://v4.cdtlas.com/20220611/BFpmTtxf/index.m3u8
     file_name='越狱第一季第一集_m3u8.txt'
+    #第一步：
     # download_m3u8_file(first_m3u8,file_name) #下载完就注释掉
     link_start=first_m3u8.split('m/')[0]+'m' #切割获取链接头
     # print(link_start)
@@ -147,13 +148,15 @@ def main(url):
             else:
                 line=line.rstrip() # .rstrip()去掉结尾 空白符or换行符 \n
                 second_m3u8_href=f'{link_start}{line}' #拼接链接头+获取的m3u8地址
-                # download_m3u8_file(second_m3u8_href,second_m3u8_file)
+                #第二步：
+                # download_m3u8_file(second_m3u8_href,second_m3u8_file) #下载完就注释掉
                 # print('第二层m3u8 搞定')
   
     # 异步协程 下载ts视频文件
     # 下载完毕请注释掉
+    #第三步：（下载完就注释掉）
     # asyncio.run(aio_download()) #容易报错Error: Event loop is closed
-    # asyncio.get_event_loop也会报错 
+    # asyncio.get_event_loop也会报错 ，因为一直没有结束，所以需要自定义timeout
     # loop=asyncio.get_event_loop()
     # loop.run_until_complete(aio_download())
 
@@ -161,14 +164,12 @@ def main(url):
     # 抓取密钥key.key
     kkey=get_key(second_m3u8_file)
     # print(kkey) #key.key:57d17982aec9bda8
+    #第四步：（下载完就注释掉）
     # asyncio.run(aio_dec(kkey)) #解密、下载文件
 
     # 合并ts文件为mp4
+    #第五步：（下载完就注释掉）
     # merge_ts()
-
-
-
-
 
 if __name__=='__main__':
     url='https://www.kuyun.tv/play/14453-0-0.html'
