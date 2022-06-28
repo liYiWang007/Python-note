@@ -1,5 +1,5 @@
 #抓取求职信息
-
+# 拉勾网为例
 # selenium:模拟人类操作浏览器抓取数据
 # 1.安装selenium：pip install 
 # 2.下载安装浏览器驱动：如chromedriver,得匹配本地浏览器版本
@@ -8,7 +8,7 @@
 # from selenium.webdriver import firefox #火狐驱动
 from selenium.webdriver import Chrome  #谷歌驱动
 from selenium.webdriver.common.by import By  #find_element_by_*语法已弃用。需要导入by依赖
-from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.keys import Keys #键盘输入
 
 import time
 
